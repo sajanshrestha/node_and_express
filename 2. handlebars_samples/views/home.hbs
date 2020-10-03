@@ -1,0 +1,16 @@
+<h3>Profile</h3>
+
+<h4>{{ person.name }} </h4>
+
+<p> {{ person.city }}, {{ person.state }} </p>
+
+<p> {{ person.college }} </p>
+
+<h3>Programming Languages</h3>
+
+<ul>
+    {{# each person.programmingLanguages }}
+
+    <li> {{ this }} </li>
+    {{/ each }}
+</ul>

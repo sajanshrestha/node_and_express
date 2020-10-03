@@ -1,0 +1,1 @@
+This project uses HandleBars as a templating engine. Checkout 'home.hbs' and 'handlebars.js' to see how the templating engine is implemented.
