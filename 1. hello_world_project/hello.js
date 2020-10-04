@@ -3,6 +3,8 @@ var hbs = require('express-handlebars')
 
 var app = express()
 
+const PORT = process.env.PORT || 3000
+
 // view engine setup
 app.engine('hbs', hbs({ extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views' }))
 app.set('view engine', 'hbs')
@@ -17,4 +19,4 @@ app.get('/about', function (req, res) {
     res.render('about', { title: 'About Page' })
 })
 
-app.listen(3000)
+app.listen(PORT, () => console.log(`server is running on port ${PORT}.`))
