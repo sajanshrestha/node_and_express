@@ -1,0 +1,8 @@
+New
+
+- body parser middleware in 'crud.js'
+
+- installed a new package called 'uuid' which I used to generate a unique id.
+    npm i uuid  
+    var uuid = require('uuid')
+    var id = uuid.v4()
